@@ -1,0 +1,69 @@
+# LessonForge – μπλοκ αρχικής (εξαγωγή)
+schema_version: '1.0'
+kind: homeblocks
+fullscreen_hide:
+- menu
+- side
+- widgets
+- footer
+blocks:
+- type: embed
+  audience: logged
+  url: https://golf-cart-center.com/wp-content/uploads/2025/11/20190305_165041_resized.jpg
+- type: embed
+  audience: logged
+  url: https://youtu.be/YJ_e-dsMruc
+- type: html
+  audience: logged
+  html: "<!DOCTYPE html>\r\n<html lang=\"el\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta\
+    \ name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>McDonald's Interactive\
+    \ Sandbox</title>\r\n    \r\n    <!-- INTERNAL CSS: Ορίζει την κεντρική εμφάνιση της σελίδας -->\r\
+    \n    <style>\r\n        body {\r\n            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;\r\
+    \n            background-color: #f8f9fa;\r\n            color: #333;\r\n            margin: 0;\r\n\
+    \            padding: 20px;\r\n            text-align: center;\r\n        }\r\n        .container\
+    \ {\r\n            max-width: 600px;\r\n            margin: 0 auto;\r\n            background: white;\r\
+    \n            padding: 30px;\r\n            border-radius: 15px;\r\n            box-shadow: 0 4px\
+    \ 15px rgba(0,0,0,0.1);\r\n            border-top: 8px solid #ffbc0d; /* Το κλασικό κίτρινο των McDonald's\
+    \ */\r\n        }\r\n        .logo {\r\n            font-size: 48px;\r\n            color: #db0007;\
+    \ /* Το κόκκινο των McDonald's */\r\n            font-weight: bold;\r\n            margin-bottom:\
+    \ 10px;\r\n        }\r\n        .display-area {\r\n            min-height: 120px;\r\n            margin:\
+    \ 20px 0;\r\n            padding: 15px;\r\n            border: 2px dashed #ccc;\r\n            border-radius:\
+    \ 8px;\r\n            background-color: #fffdf5;\r\n            display: flex;\r\n            align-items:\
+    \ center;\r\n            justify-content: center;\r\n            font-size: 18px;\r\n            font-weight:\
+    \ 500;\r\n        }\r\n        .btn-group {\r\n            display: flex;\r\n            flex-direction:\
+    \ column;\r\n            gap: 12px;\r\n            margin-top: 20px;\r\n        }\r\n        button\
+    \ {\r\n            padding: 12px 24px;\r\n            font-size: 16px;\r\n            font-weight:\
+    \ bold;\r\n            border: none;\r\n            border-radius: 25px;\r\n            cursor: pointer;\r\
+    \n            transition: transform 0.1s, opacity 0.2s;\r\n        }\r\n        button:active {\r\n\
+    \            transform: scale(0.98);\r\n        }\r\n    </style>\r\n</head>\r\n<body>\r\n\r\n   \
+    \ <div class=\"container\">\r\n        <div class=\"logo\">m</div>\r\n        <h2>McDonald's Order\
+    \ Simulator</h2>\r\n        <p>Πατήστε τα παρακάτω κουμπιά για να δοκιμάσετε τη λειτουργία τους και\
+    \ να αλλάξετε το περιεχόμενο.</p>\r\n        \r\n        <!-- Η περιοχή όπου θα εμφανίζονται τα αποτελέσματα\
+    \ των δοκιμών σου -->\r\n        <div id=\"output\" class=\"display-area\">\r\n            \U0001F35F\
+    \ Το καλάθι σας είναι άδειο. Επιλέξτε κάτι!\r\n        </div>\r\n\r\n        <div class=\"btn-group\"\
+    >\r\n            \r\n            <!-- ΚΟΥΜΠΙ 1: Με INLINE CSS για κόκκινο background και λευκά γράμματα\
+    \ -->\r\n            <button \r\n                style=\"background-color: #db0007; color: white;\
+    \ box-shadow: 0 4px 6px rgba(219, 0, 7, 0.3);\"\r\n                onclick=\"changeContent('\U0001F354\
+    \ Προστέθηκε 1x Big Mac στο καλάθι!')\">\r\n                Παράγγειλε Big Mac\r\n            </button>\r\
+    \n\r\n            <!-- ΚΟΥΜΠΙ 2: Με INLINE CSS για κίτρινο background και μαύρα γράμματα -->\r\n \
+    \           <button \r\n                style=\"background-color: #ffbc0d; color: #222; box-shadow:\
+    \ 0 4px 6px rgba(255, 188, 13, 0.3);\"\r\n                onclick=\"changeContent('\U0001F35F Προστέθηκαν\
+    \ 1x Μεγάλες Πατάτες!')\">\r\n                Παράγγειλε Πατάτες\r\n            </button>\r\n\r\n\
+    \            <!-- ΚΟΥΜΠΙ 3: Δοκιμαστικό κουμπί επαναφοράς με ουδέτερο inline στυλ -->\r\n        \
+    \    <button \r\n                style=\"background-color: #333333; color: white; font-size: 14px;\
+    \ width: 50%; margin: 10px auto 0 auto;\"\r\n                onclick=\"changeContent('\U0001F35F Το\
+    \ καλάθι σας είναι άδειο. Επιλέξτε κάτι!')\">\r\n                Καθαρισμός Καλαθιού\r\n         \
+    \   </button>\r\n\r\n        </div>\r\n    </div>\r\n\r\n    <!-- Μικρό Script για να λειτουργούν\
+    \ τα κουμπιά σου live -->\r\n    <script>\r\n        function changeContent(text) {\r\n          \
+    \  document.getElementById('output').innerHTML = text;\r\n        }\r\n    </script>\r\n\r\n</body>\r\
+    \n</html>"
+  height: 360
+- type: embed
+  audience: logged
+  url: https://docs.google.com/presentation/d/1l5fVmLQ8zN118coRXKZqI70Y8bLU_DVh/pub
+- type: embed
+  audience: logged
+  url: https://docs.google.com/forms/d/e/1FAIpQLSfADItQwhhHfYJJtu0jtyiD2DJHrwwBa3et_wSBj4z8Aotpmg/viewform
+  height: 360
+  fit: true
+  center: true

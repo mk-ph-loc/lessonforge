@@ -1,0 +1,36 @@
+# LessonForge – πρότυπο μπλοκ αρχικής σελίδας (v1.0)
+# Συμπλήρωσε, αποθήκευσε και ανέβασέ το στο «🏠 Μπλοκ αρχικής» → «Εισαγωγή από αρχείο».
+# Έως 12 μπλοκ. Σβήσε όσα δεν θες. Η σειρά εδώ = η σειρά στην αρχική.
+# audience: logged (μόνο συνδεδεμένοι, προεπιλογή) | all (και επισκέπτες) | teacher (μόνο καθηγητές)
+schema_version: "1.0"
+kind: homeblocks
+fullscreen_hide: [menu, side, widgets, footer]   # τι κρύβεται στην «Πλήρη οθόνη»· [] = τίποτα
+blocks:
+  - type: announcement              # τελευταία ανακοίνωση
+    title: Ανακοίνωση
+    audience: all
+  - type: course                    # κάρτα ενός μαθήματος (slug του μαθήματος)
+    course: pliroforiki-a-gymnasiou
+  - type: today                     # σημερινό μάθημα (course κενό = όλα τα ορατά)
+    audience: logged
+  - type: materials                 # έως 6 υλικά: ref ή ακριβής τίτλος υλικού
+    title: Για σήμερα
+    materials: ["Κουίζ εισαγωγής"]
+  - type: results                   # αποτελέσματα κουίζ/άσκησης
+    material: "Κουίζ εισαγωγής"
+  - type: custom                    # κείμενο Markdown (έως 2000 χαρακτήρες)
+    title: Καλώς ήρθατε
+    text: |
+      Καλή σχολική χρονιά! Δείτε τα **μαθήματα** παρακάτω.
+  - type: embed                     # YouTube, εικόνα, Google Forms ή Google Slides
+    title: Βίντεο
+    url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+  # Google Forms / Slides: βγάλε το # και βάλε τον ΠΛΗΡΗ σύνδεσμο από τη γραμμή διευθύνσεων (όχι forms.gle)
+  # - type: embed
+  #   url: https://docs.google.com/forms/d/e/<ID>/viewform
+  #   height: 700
+  # - type: embed
+  #   url: https://docs.google.com/presentation/d/e/<ID>/pub
+  - type: html                      # μικρή HTML, τρέχει απομονωμένα (έως 20000 χαρακτήρες)
+    height: 300
+    html: "<h2 style='color:teal'>Γεια σου!</h2>"
