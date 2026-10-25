@@ -58,12 +58,4 @@ blocks:
     \  document.getElementById('output').innerHTML = text;\r\n        }\r\n    </script>\r\n\r\n</body>\r\
     \n</html>"
   height: 360
-- type: embed
-  audience: logged
-  url: https://docs.google.com/presentation/d/1l5fVmLQ8zN118coRXKZqI70Y8bLU_DVh/pub
-- type: embed
-  audience: logged
-  url: https://docs.google.com/forms/d/e/1FAIpQLSfADItQwhhHfYJJtu0jtyiD2DJHrwwBa3et_wSBj4z8Aotpmg/viewform
-  height: 360
-  fit: true
-  center: true
+
